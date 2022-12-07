@@ -1,0 +1,53 @@
+1: iniciando em Backend criar arquivo server.js
+
+2:nele importar o HTTP pra criar um server retornando uma mensagem de teste
+
+3: usar express : npm init, npm install --save express
+
+4:criar index.js importa express criar a estancia app
+
+5: criar pasta routes com index.js e todos os .js correpondente a cada rota dentro, fazer o module.exports pra main index.js
+
+6: Criar pasta controllers criar um arquivo nela pra cada arquivo de routes 
+
+7: configurar em controllers as funções de cada rota específica e exportar todas elas atraves do module.exports
+
+8: Em routes imporar os modulos e concatenar a rota correspondente 
+
+OBS: testando o middleware em index.js e comentado depois 
+
+
+9: E respectivamente exportar os modulos pronto de routes pra main index.js
+
+10: EM index.js controller add na rota calc, com um condicional, destruring assigmnent e pra atrelar req.query as key que serão declaradas, um const soma com oderaçaõ de adição estanciando com um parseFloat, depois passar o res.send pra renderizar o resultado no browser exportar esse modulo calc e importar na routes.index.js
+
+11: em seguida chamar no browser :http://localhost:3000/calc?num1=1&num2=2
+
+12: em index.js controller add rota par con uma condicional pra ver se o numero declarado em paramtro é par ou impar exportaei para index.js routes 
+
+13: chamar na url: http://localhost:3000/par/11
+ browser render: Numero impar
+ chamar na url: http://localhost:3000/par/10
+  browser render: Numero par
+
+  14: inciar testes add: npm install mocha --dev , npm install chai --dev, npm install sinon --dev
+
+  15: configurar package.json "test": path
+
+  16:mocha chai sineon ficou imcompleto no exercicio 
+
+  17: instalar o ejs: npm install --save ejs 
+
+  18: no console digitar \ enter npms start pra ver o caminho
+
+  19: add app.set em main index.js denominado pasta views e arquivos ejs
+
+  20: criar pasta views/home.ejs, criar estrutura html dentro dela
+
+  21: criado header.ejs footer.ejs em partials
+
+  22: refatorando calc em controller/index.js, e criando tambem views/calc.ejs 
+
+  23:criando um mini menu no header.ejs
+
+  24: Repetição, em src/index.js na const home chamamos um array e um objeto pra depois inserimos no home.ejs 
